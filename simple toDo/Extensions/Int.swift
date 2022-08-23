@@ -17,6 +17,6 @@ extension Int {
         if "567890".contains("\(self % 10)") {taskString = "Задач"}
         if 11...14 ~= self % 100             {taskString = "Задач"}
         
-        return "\(self) " + taskString
+        return taskString
     }
 }

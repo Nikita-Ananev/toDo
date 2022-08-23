@@ -20,13 +20,11 @@ struct TaskDayCardView: View {
             VStack {
                 Text(String(count))
                     .font(.system(size: 125))
-                    .shadow(color: .gray, radius: 1, x: 0, y: 0)
-                    .foregroundColor(.white)
                 Text(count.taskString())
-                    .font(.system(size: 15))
+                    .font(.system(size: 20))
                 Text("на сегодня")
-                    .font(.system(size: 12))
-            }
+                    .font(.system(size: 15))
+            }.foregroundColor(Color(red: 54 / 255, green: 60 / 255, blue: 92 / 255))
         }
     }
 }
