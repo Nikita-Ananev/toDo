@@ -67,13 +67,8 @@
 			children = (
 				42C8787C28B3D3C800E246B9 /* simple_toDoApp.swift */,
 				42C8787E28B3D3C800E246B9 /* ContentView.swift */,
-				42C878A528B5263D00E246B9 /* MenuBottomView.swift */,
 				42C878A028B51AA200E246B9 /* Extensions */,
-				42C878A128B51FE000E246B9 /* StatisticsView.swift */,
-				42C8789828B517EF00E246B9 /* MenuTopView.swift */,
-				42C8789A28B5184300E246B9 /* TaskScrollView.swift */,
-				42C8789C28B519EC00E246B9 /* TaskDayCardView.swift */,
-				42C878A328B521FE00E246B9 /* SectionNameView.swift */,
+				42C878A928B52DFC00E246B9 /* MainMenu */,
 				42C8788028B3D3CA00E246B9 /* Assets.xcassets */,
 				42C8788228B3D3CA00E246B9 /* Preview Content */,
 			);
@@ -94,6 +89,51 @@
 				42C8789E28B51A9800E246B9 /* Int.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42C878A728B52D6900E246B9 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				42C8789A28B5184300E246B9 /* TaskScrollView.swift */,
+				42C878A828B52D7C00E246B9 /* Components */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		42C878A828B52D7C00E246B9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				42C8789C28B519EC00E246B9 /* TaskDayCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		42C878A928B52DFC00E246B9 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				42C8789828B517EF00E246B9 /* MenuTopView.swift */,
+				42C878AA28B52E2300E246B9 /* Components */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		42C878AA28B52E2300E246B9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				42C878A528B5263D00E246B9 /* MenuBottomView.swift */,
+				42C878A328B521FE00E246B9 /* SectionNameView.swift */,
+				42C878A728B52D6900E246B9 /* Tasks */,
+				42C878AB28B52E4800E246B9 /* Statistics */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		42C878AB28B52E4800E246B9 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				42C878A128B51FE000E246B9 /* StatisticsView.swift */,
+			);
+			path = Statistics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

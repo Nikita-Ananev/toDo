@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TaskScrollView: View {
-    @State var count = 1
+    @State var count = 3
 //Сделать скролл
 
     var body: some View {
@@ -19,9 +19,10 @@ struct TaskScrollView: View {
                 HStack {
                     ForEach(0...7, id: \.self) { index in
                         TaskDayCardView(count: $count)
+                            .padding(.leading)
                     }
                 }
-                .padding(.horizontal)
+                .padding()
 
             }
         }
