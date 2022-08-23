@@ -10,13 +10,18 @@ import SwiftUI
 struct ContentView: View {
     @State var name = "Никита!"
     var body: some View {
-        VStack {
-            MenuTopView(name: $name)
-            TaskScrollView()
-            StatisticsView()
-
-
-            Spacer()
+        ZStack {
+            ScrollView {
+                VStack {
+                    MenuTopView(name: $name)
+                    TaskScrollView()
+                    StatisticsView()
+                    
+                    
+                    Spacer()
+                }
+            }
+            MenuBottomView()
         }
     }
 }
@@ -26,7 +31,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-
 
 

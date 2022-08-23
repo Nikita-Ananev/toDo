@@ -24,7 +24,6 @@ struct TaskDayCardView: View {
             }
             .foregroundColor(.white)
         }
-        .padding(.horizontal, 5)
     }
 }
 

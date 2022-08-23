@@ -13,13 +13,7 @@ struct TaskScrollView: View {
 
     var body: some View {
         VStack {
-            HStack {
-                Text("Ближайшая неделя")
-                    .bold()
-                    .font(.system(size: 25))
-                Spacer()
-            }
-            .padding(.horizontal, 35)
+            SectionNameView(name: "Ближайшая неделя")
             
             ScrollView(.horizontal) {
                 HStack {
@@ -27,6 +21,8 @@ struct TaskScrollView: View {
                         TaskDayCardView(count: $count)
                     }
                 }
+                .padding(.horizontal)
+
             }
         }
     }
@@ -38,5 +34,6 @@ struct TaskScrollView_Previews: PreviewProvider {
         TaskScrollView()
     }
 }
+
 
 
