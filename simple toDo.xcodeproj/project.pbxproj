@@ -23,6 +23,8 @@
 		42C878B228B5342700E246B9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42C878B128B5342700E246B9 /* FirebaseFirestore */; };
 		42C878B428B5342700E246B9 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 42C878B328B5342700E246B9 /* FirebaseFirestoreCombine-Community */; };
 		42C878B628B5342700E246B9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42C878B528B5342700E246B9 /* FirebaseFirestoreSwift */; };
+		42C878B828B538C900E246B9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C878B728B538C900E246B9 /* AuthManager.swift */; };
+		42C878BA28B5438200E246B9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C878B928B5438200E246B9 /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		42C878A328B521FE00E246B9 /* SectionNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionNameView.swift; sourceTree = "<group>"; };
 		42C878A528B5263D00E246B9 /* MenuBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBottomView.swift; sourceTree = "<group>"; };
 		42C878AC28B531DA00E246B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42C878B728B538C900E246B9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		42C878B928B5438200E246B9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			children = (
 				42C8787C28B3D3C800E246B9 /* simple_toDoApp.swift */,
 				42C8787E28B3D3C800E246B9 /* ContentView.swift */,
+				42C878B928B5438200E246B9 /* AuthView.swift */,
+				42C878B728B538C900E246B9 /* AuthManager.swift */,
 				42C878A028B51AA200E246B9 /* Extensions */,
 				42C878A928B52DFC00E246B9 /* MainMenu */,
 				42C8788028B3D3CA00E246B9 /* Assets.xcassets */,
@@ -236,6 +242,8 @@
 				42C8789F28B51A9800E246B9 /* Int.swift in Sources */,
 				42C8787F28B3D3C800E246B9 /* ContentView.swift in Sources */,
 				42C8787D28B3D3C800E246B9 /* simple_toDoApp.swift in Sources */,
+				42C878BA28B5438200E246B9 /* AuthView.swift in Sources */,
+				42C878B828B538C900E246B9 /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
