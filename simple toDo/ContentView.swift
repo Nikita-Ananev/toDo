@@ -36,9 +36,13 @@ struct MenuTopView: View {
             HStack {
                 Text("Привет,")
                     .fontWeight(.thin)
-                Text(name)
-                    .fontWeight(.bold)
                 
+                HStack(spacing: 0) {
+                    Text(name)
+                        .fontWeight(.bold)
+                    Text("!")
+                        .fontWeight(.thin)
+                }
             }
             Spacer()
             Image(systemName: "figure.wave" )
