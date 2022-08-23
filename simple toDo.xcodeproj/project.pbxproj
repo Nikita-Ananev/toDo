@@ -15,6 +15,7 @@
 		42C8789B28B5184300E246B9 /* TaskScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8789A28B5184300E246B9 /* TaskScrollView.swift */; };
 		42C8789D28B519EC00E246B9 /* TaskDayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8789C28B519EC00E246B9 /* TaskDayCardView.swift */; };
 		42C8789F28B51A9800E246B9 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C8789E28B51A9800E246B9 /* Int.swift */; };
+		42C878A228B51FE000E246B9 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C878A128B51FE000E246B9 /* StatisticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		42C8789A28B5184300E246B9 /* TaskScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScrollView.swift; sourceTree = "<group>"; };
 		42C8789C28B519EC00E246B9 /* TaskDayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDayCardView.swift; sourceTree = "<group>"; };
 		42C8789E28B51A9800E246B9 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		42C878A128B51FE000E246B9 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				42C8787C28B3D3C800E246B9 /* simple_toDoApp.swift */,
 				42C8787E28B3D3C800E246B9 /* ContentView.swift */,
 				42C878A028B51AA200E246B9 /* Extensions */,
+				42C878A128B51FE000E246B9 /* StatisticsView.swift */,
 				42C8789828B517EF00E246B9 /* MenuTopView.swift */,
 				42C8789A28B5184300E246B9 /* TaskScrollView.swift */,
 				42C8789C28B519EC00E246B9 /* TaskDayCardView.swift */,
@@ -160,6 +163,7 @@
 				42C8789B28B5184300E246B9 /* TaskScrollView.swift in Sources */,
 				42C8789928B517EF00E246B9 /* MenuTopView.swift in Sources */,
 				42C8789D28B519EC00E246B9 /* TaskDayCardView.swift in Sources */,
+				42C878A228B51FE000E246B9 /* StatisticsView.swift in Sources */,
 				42C8789F28B51A9800E246B9 /* Int.swift in Sources */,
 				42C8787F28B3D3C800E246B9 /* ContentView.swift in Sources */,
 				42C8787D28B3D3C800E246B9 /* simple_toDoApp.swift in Sources */,

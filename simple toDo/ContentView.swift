@@ -13,7 +13,9 @@ struct ContentView: View {
         VStack {
             MenuTopView(name: $name)
             TaskScrollView()
-            
+            StatisticsView()
+
+
             Spacer()
         }
     }
@@ -24,7 +26,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
 
 
 
