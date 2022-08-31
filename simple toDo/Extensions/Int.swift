@@ -5,11 +5,14 @@
 //  Created by Никита Ананьев on 23.08.2022.
 //
 
-import SwiftUI
+import Foundation
 
 extension Int {
-    //перенести в модель Задачи
+    
+    // Добавляет правильное окончание
+    // Кинуть потом в модель Задачи
     func taskString() -> String {
+        
         var taskString: String!
         
         if "1".contains("\(self % 10)")      {taskString = "Задача"}
@@ -20,3 +23,4 @@ extension Int {
         return taskString
     }
 }
+

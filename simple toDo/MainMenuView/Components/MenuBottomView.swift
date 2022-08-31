@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct MenuBottomView: View {
+    @State var size = CGSize()
+
     var body: some View {
         VStack {
             Spacer()
@@ -29,7 +31,7 @@ struct MenuBottomView: View {
                                 .foregroundColor(.white)
                         }
                     }
-                    .frame(width: 200, height: 95)
+                    .frame(width: size.width / 2, height: size.height / 10)
                     
                 }
                 Spacer()
@@ -43,13 +45,19 @@ struct MenuBottomView: View {
                             .font(.system(size: 34))
                             .foregroundColor(.white)
                     }
-                    .frame(width: 100, height: 95)
+                    .frame(width: size.width / 4, height: size.height / 10)
+
                 }
                 
             }
             .padding()
             
         }
+        .ignoresSafeArea(.all, edges: .all)
+        .readSize { selfSize in
+            size = selfSize
+        }
+        
     }
 }
 

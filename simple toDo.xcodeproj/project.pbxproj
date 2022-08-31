@@ -25,6 +25,8 @@
 		42C878B628B5342700E246B9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42C878B528B5342700E246B9 /* FirebaseFirestoreSwift */; };
 		42C878B828B538C900E246B9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C878B728B538C900E246B9 /* AuthManager.swift */; };
 		42C878BA28B5438200E246B9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C878B928B5438200E246B9 /* AuthView.swift */; };
+		42D3930028BF669900420468 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D392FF28BF669900420468 /* View.swift */; };
+		42D3930328BF6A0C00420468 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 42D3930228BF6A0C00420468 /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		42C878AC28B531DA00E246B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42C878B728B538C900E246B9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		42C878B928B5438200E246B9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		42D392FF28BF669900420468 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			files = (
 				42C878B428B5342700E246B9 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				42C878B028B5342700E246B9 /* FirebaseAuth in Frameworks */,
+				42D3930328BF6A0C00420468 /* PopupView in Frameworks */,
 				42C878B228B5342700E246B9 /* FirebaseFirestore in Frameworks */,
 				42C878B628B5342700E246B9 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -81,10 +85,10 @@
 			children = (
 				42C8787C28B3D3C800E246B9 /* simple_toDoApp.swift */,
 				42C8787E28B3D3C800E246B9 /* ContentView.swift */,
-				42C878B928B5438200E246B9 /* AuthView.swift */,
 				42C878B728B538C900E246B9 /* AuthManager.swift */,
 				42C878A028B51AA200E246B9 /* Extensions */,
-				42C878A928B52DFC00E246B9 /* MainMenu */,
+				42C878A928B52DFC00E246B9 /* MainMenuView */,
+				42D392FD28BE53A900420468 /* AuthView */,
 				42C8788028B3D3CA00E246B9 /* Assets.xcassets */,
 				42C878AC28B531DA00E246B9 /* GoogleService-Info.plist */,
 				42C8788228B3D3CA00E246B9 /* Preview Content */,
@@ -104,17 +108,18 @@
 			isa = PBXGroup;
 			children = (
 				42C8789E28B51A9800E246B9 /* Int.swift */,
+				42D392FF28BF669900420468 /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		42C878A728B52D6900E246B9 /* Tasks */ = {
+		42C878A728B52D6900E246B9 /* TaskScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				42C8789A28B5184300E246B9 /* TaskScrollView.swift */,
 				42C878A828B52D7C00E246B9 /* Components */,
 			);
-			path = Tasks;
+			path = TaskScrollView;
 			sourceTree = "<group>";
 		};
 		42C878A828B52D7C00E246B9 /* Components */ = {
@@ -125,13 +130,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		42C878A928B52DFC00E246B9 /* MainMenu */ = {
+		42C878A928B52DFC00E246B9 /* MainMenuView */ = {
 			isa = PBXGroup;
 			children = (
 				42C8789828B517EF00E246B9 /* MenuTopView.swift */,
 				42C878AA28B52E2300E246B9 /* Components */,
 			);
-			path = MainMenu;
+			path = MainMenuView;
 			sourceTree = "<group>";
 		};
 		42C878AA28B52E2300E246B9 /* Components */ = {
@@ -139,18 +144,34 @@
 			children = (
 				42C878A528B5263D00E246B9 /* MenuBottomView.swift */,
 				42C878A328B521FE00E246B9 /* SectionNameView.swift */,
-				42C878A728B52D6900E246B9 /* Tasks */,
-				42C878AB28B52E4800E246B9 /* Statistics */,
+				42C878A728B52D6900E246B9 /* TaskScrollView */,
+				42C878AB28B52E4800E246B9 /* StatisticsView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		42C878AB28B52E4800E246B9 /* Statistics */ = {
+		42C878AB28B52E4800E246B9 /* StatisticsView */ = {
 			isa = PBXGroup;
 			children = (
 				42C878A128B51FE000E246B9 /* StatisticsView.swift */,
 			);
-			path = Statistics;
+			path = StatisticsView;
+			sourceTree = "<group>";
+		};
+		42D392FD28BE53A900420468 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				42C878B928B5438200E246B9 /* AuthView.swift */,
+				42D392FE28BE53BB00420468 /* Components */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		42D392FE28BE53BB00420468 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +195,7 @@
 				42C878B128B5342700E246B9 /* FirebaseFirestore */,
 				42C878B328B5342700E246B9 /* FirebaseFirestoreCombine-Community */,
 				42C878B528B5342700E246B9 /* FirebaseFirestoreSwift */,
+				42D3930228BF6A0C00420468 /* PopupView */,
 			);
 			productName = "simple toDo";
 			productReference = 42C8787928B3D3C800E246B9 /* Another regular todo.app */;
@@ -205,6 +227,7 @@
 			mainGroup = 42C8787028B3D3C800E246B9;
 			packageReferences = (
 				42C878AE28B5342700E246B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				42D3930128BF6A0C00420468 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 42C8787A28B3D3C800E246B9 /* Products */;
 			projectDirPath = "";
@@ -241,6 +264,7 @@
 				42C878A628B5263D00E246B9 /* MenuBottomView.swift in Sources */,
 				42C8789F28B51A9800E246B9 /* Int.swift in Sources */,
 				42C8787F28B3D3C800E246B9 /* ContentView.swift in Sources */,
+				42D3930028BF669900420468 /* View.swift in Sources */,
 				42C8787D28B3D3C800E246B9 /* simple_toDoApp.swift in Sources */,
 				42C878BA28B5438200E246B9 /* AuthView.swift in Sources */,
 				42C878B828B538C900E246B9 /* AuthManager.swift in Sources */,
@@ -454,6 +478,14 @@
 				kind = branch;
 			};
 		};
+		42D3930128BF6A0C00420468 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -476,6 +508,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 42C878AE28B5342700E246B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		42D3930228BF6A0C00420468 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42D3930128BF6A0C00420468 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

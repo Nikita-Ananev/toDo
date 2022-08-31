@@ -13,17 +13,23 @@ struct ContentView: View {
         ZStack {
             Color(red: 242 / 255, green: 248 / 255, blue: 255 / 255)
                 .edgesIgnoringSafeArea(.all)
-            
-            ScrollView {
                 VStack {
                     MenuTopView(name: $name)
-                    TaskScrollView()
-                    StatisticsView()
+                    ScrollView {
+                        VStack {
+                            TaskScrollView()
+                            StatisticsView()
+                            StatisticsView()
+                            StatisticsView()
+                            StatisticsView()
+
+                        }
+                    }
+
                     
                     
                     Spacer()
                 }
-            }
             MenuBottomView()
         }
     }

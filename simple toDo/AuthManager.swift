@@ -8,21 +8,32 @@
 import Firebase
 import SwiftUI
 
+// TODO: Добавить локализованные ошибки на ру
+
 final class AuthManager: ObservableObject {
     
     let firebaseAuth = Auth.auth()
     
-    @Published var isSignInMode = true
+    @Published var isSignInMode = true {
+        willSet {
+            self.email = ""
+            self.password = ""
+        }
+    }
     
     @Published var email = ""
     @Published var password = ""
     @Published var isLogged = false
     
+    @Published var error = false
+    @Published var errorDescription = ""
     
     static let shared = AuthManager()
 
     private init() {
-        
+        if (firebaseAuth.currentUser != nil) {
+            isLogged = true
+        }
     }
     
     func logOut() {
@@ -35,10 +46,12 @@ final class AuthManager: ObservableObject {
           isLogged = false
     }
     
+    
     func signIn() {
         firebaseAuth.signIn(withEmail: email, password: password) { (result, error) in
                 if error != nil {
-                    print(error?.localizedDescription ?? "")
+                    self.errorDescription = error?.localizedDescription ?? "Ошибка"
+                    self.error = true
                 } else {
                     print("success")
                     self.isLogged = true
@@ -47,6 +60,17 @@ final class AuthManager: ObservableObject {
         }
     func signUp() {
         
+        firebaseAuth.createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                self.errorDescription = error?.localizedDescription ?? "Ошибка"
+                self.error = true
+                
+            } else {
+                print("succses")
+                self.isLogged = true
+            }
+            
+        }
     }
 
 }

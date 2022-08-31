@@ -25,6 +25,9 @@ struct MenuTopView: View {
             Spacer()
             Image(systemName: "figure.wave" )
                 .font(.system(size: 25))
+                .onTapGesture {
+                    AuthManager.shared.logOut()
+                }
         }
         .padding()
     }
